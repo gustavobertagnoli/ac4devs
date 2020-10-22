@@ -8,16 +8,16 @@ def nao_entre_em_panico():
 	found  = 0
 	resposta = "0,"
 	while (found < litmie):
-	tmp = proximo
-	proximo = proximo + anterior
-	anterior = tmp
-	found=found+1
-	resposta+= str(proximo) + ","
+	  tmp = proximo
+	  proximo = proximo + anterior
+	  anterior = tmp
+	  found=found+1
+	  resposta+= str(proximo) + ","
       
       
 	return resposta
       
 if __name__ == "__main__":
 	port = int(os.environ.get("PORT", 5000))
-	app.run(host='0.0.0.0', port=port
-        )
+	app.run(host='0.0.0.0', port=port)
+
